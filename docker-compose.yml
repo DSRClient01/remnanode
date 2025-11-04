@@ -1,0 +1,9 @@
+services:
+  remnanode:
+    container_name: remnanode
+    hostname: remnanode
+    image: dsrclient/remnanode:2.0.0
+    restart: always
+    network_mode: host
+    env_file:
+      - .env
